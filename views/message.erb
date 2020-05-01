@@ -1,0 +1,9 @@
+<center>
+<% if @bday == @today  %>
+  Happy Birthday <%= @name %>!
+<% elsif @how_long > 0 %>
+  Your Birthday is in <%=@how_long%> days, <%=@name%>.
+<% else %>
+  Your Birthday is in <%= 365 +@how_long %> days, <%=@name%>.
+<% end %>
+</center>
